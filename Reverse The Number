@@ -1,0 +1,15 @@
+#include <stdio.h>
+int main()
+{
+    int num,lastdig,revno=0;
+    printf("enter the number:\n");
+    scanf("%d",&num);
+    while(num!=0)
+    {
+        lastdig=num%10;
+        revno=revno*10+lastdig;
+        num=num/10;
+    }
+    printf("reverse of no is:%d",revno);
+    return 0;
+}
