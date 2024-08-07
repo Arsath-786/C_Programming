@@ -1,3 +1,5 @@
+/*A Palindrome is a number that remains the same when its digits are reversed
+eg:1001,1991,233332 reverse number are 1001,1991,233332*/
 #include<stdio.h>
 int main()
 {
