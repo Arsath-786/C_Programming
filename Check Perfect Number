@@ -1,0 +1,25 @@
+/*Perfect number is a positive integer that is equal to the sum of its proper perfect divisor
+eg:6 is perfect number 1,2and 3 are its divisor 1+2+3=6------- 28 is perfect 1+2+4+7+14=28*/
+#include <stdio.h>
+int main()
+{
+    int num,i,sum=0;
+    printf("Enter the Number:");
+    scanf("%d",&num);
+    for(i=1;i<num;i++)
+    {
+        if(num%i==0)
+        {
+            sum+=i;
+        }
+    }
+    if(sum==num)
+    {
+        printf("%d is a perfect number\n",num);
+    }
+    else
+    {
+        printf("%d is not a perfect number\n",num);
+    }
+    return 0;
+}
