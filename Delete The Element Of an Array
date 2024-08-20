@@ -1,0 +1,31 @@
+#include<stdio.h>
+int main()
+{
+    int i,n,arr[100],pos;
+    printf("Enter the Size of an Array:");
+    scanf("%d",&n);
+    printf("Enter the Elements Of the Array:\n");
+    for(i=0;i<n;i++)
+    {
+        scanf("%d",&arr[i]);
+    }
+    n--;
+    printf("Enter The Position Of the Element To Delete:\n");
+    scanf("%d",&pos);
+    if(pos>n || pos<=0)
+    {
+        printf("Invalid Position\n");
+        return 0;
+    }
+    for(i=n;i>=pos;i--)
+    {
+        arr[i-1]=arr[i];
+    }
+    pos=pos-1;
+    printf("After Deletion\n");
+    for(i=0;i<n;i++)
+    {
+        printf("%d ",arr[i]);
+    }
+    return 0;
+}
